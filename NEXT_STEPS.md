@@ -36,6 +36,7 @@
 - richer chapter-level artifact slots added for the strongest validation chapter items (Dell / Hitachi / IBM / Azure) so the middle years feel archival, not repetitive
 - validation wall upgraded from a generic grouped list into a source-backed ecosystem module with dated milestones, editorial notes, and direct links to primary evidence
 - artifact system upgraded to support multi-source editorial artifacts and richer chapter treatments for geography + AI-era signal stacks
+- new evidence-exhibit layer added between narrative chapters and the archive, grouping the strongest source-backed artifacts into editorial desk-style exhibit cards with chapter/archive jumps and provenance links
 
 ## Next implementation steps
 1. Strengthen the source archive further by capturing more direct primary URLs for early academic details, especially anything tighter than the current profile-level CUHK / Beckman trail.

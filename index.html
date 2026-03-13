@@ -1427,10 +1427,105 @@
       background: rgba(25,50,79,.06); border: 1px solid rgba(25,50,79,.08); color: var(--accent); font-size: 12px;
     }
 
+    .exhibits-wrap { margin: 34px 0; }
+    .exhibits-panel { padding: 28px; }
+    .exhibit-intro {
+      max-width: 72ch;
+      color: var(--muted);
+      line-height: 1.8;
+      margin: 0 0 24px;
+    }
+    .exhibit-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .exhibit-card {
+      padding: 22px;
+      border-radius: 24px;
+      background: linear-gradient(180deg, rgba(255,255,255,.84), rgba(255,255,255,.70));
+      border: 1px solid rgba(25,50,79,.08);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.42);
+    }
+    .exhibit-card h3 {
+      margin: 0 0 10px;
+      font-family: Georgia, serif;
+      font-size: 28px;
+      line-height: 1.22;
+      letter-spacing: -.02em;
+    }
+    .exhibit-card > p {
+      margin: 0 0 14px;
+      color: var(--muted);
+      line-height: 1.78;
+    }
+    .exhibit-lens {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+      display: grid;
+      gap: 10px;
+      line-height: 1.72;
+    }
+    .exhibit-artifacts {
+      display: grid;
+      gap: 12px;
+      margin: 18px 0;
+    }
+    .exhibit-artifact {
+      display: grid;
+      gap: 10px;
+      padding: 16px;
+      border-radius: 18px;
+      background: rgba(247,243,236,.74);
+      border: 1px solid rgba(25,50,79,.08);
+    }
+    .exhibit-artifact-topline,
+    .exhibit-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+    .exhibit-artifact h4 {
+      margin: 0;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      line-height: 1.32;
+    }
+    .exhibit-artifact p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.68;
+    }
+    .exhibit-source-ledger {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .exhibit-source-ledger a,
+    .exhibit-action,
+    .exhibit-chapter-link {
+      text-decoration: none;
+      padding: 9px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(25,50,79,.08);
+      background: rgba(255,255,255,.78);
+      color: var(--accent);
+      font-size: 12px;
+    }
+    .exhibit-action {
+      cursor: pointer;
+      font: inherit;
+    }
+    .exhibit-chapter-link {
+      background: rgba(25,50,79,.06);
+    }
+
     .footer-note { margin-top: 18px; color: var(--soft); font-size: 13px; line-height: 1.7; }
 
     @media (max-width: 1080px) {
-      .hero, .overview, .main-grid, .archive-header, .present-grid, .evidence-audit, .source-explorer-header { grid-template-columns: 1fr; }
+      .hero, .overview, .main-grid, .archive-header, .present-grid, .evidence-audit, .source-explorer-header, .exhibit-grid { grid-template-columns: 1fr; }
       .sticky-stack { position: static; }
       .phase-rail ol { grid-template-columns: repeat(3, minmax(0,1fr)); }
       .archive-controls { justify-items: start; }
@@ -1440,7 +1535,7 @@
 
     @media (max-width: 700px) {
       .shell { padding-inline: 14px; }
-      .hero-copy, .hero-aside, .overview-copy, .overview-notes, .chapter, .map-panel, .validation-panel, .sources-panel, .archive-panel { padding: 22px; }
+      .hero-copy, .hero-aside, .overview-copy, .overview-notes, .chapter, .map-panel, .validation-panel, .sources-panel, .archive-panel, .exhibits-panel { padding: 22px; }
       .phase-rail ol { grid-template-columns: repeat(2, minmax(0,1fr)); }
       .chapter { padding-left: 28px; }
       .chapter::before { left: 12px; }
@@ -1562,6 +1657,17 @@
           <div class="validation-groups" id="validationGroups"></div>
         </section>
       </aside>
+    </section>
+
+    <section class="exhibits-wrap">
+      <article class="card exhibits-panel">
+        <div class="section-label">Evidence exhibit</div>
+        <h2>Key source-backed exhibits, grouped like an editorial desk</h2>
+        <p class="exhibit-intro">
+          This layer sits between the curated chapter narrative and the dense archive timeline. It shows which artifacts actually carry the chronicle, why they matter, and how each one should be read: as founding proof, validation cadence, geography evidence, or present-tense AI-era signal.
+        </p>
+        <div class="exhibit-grid" id="exhibitGrid"></div>
+      </article>
     </section>
 
     <section class="archive-wrap">
@@ -1908,6 +2014,77 @@
 
         section.append(items);
         root.append(section);
+      });
+    }
+
+    function renderExhibits(exhibits, chaptersById, artifactsById, sourcesById, taxonomyById, openArchiveScope) {
+      const root = document.getElementById('exhibitGrid');
+      exhibits.forEach((exhibit) => {
+        const chapter = chaptersById.get(exhibit.chapterId);
+        const card = make('section', 'exhibit-card');
+        card.append(make('div', 'artifact-eyebrow', exhibit.eyebrow));
+        card.append(make('h3', '', exhibit.title));
+        card.append(make('p', '', exhibit.summary));
+        if (exhibit.curatorNote) {
+          const note = make('p', 'artifact-caption', exhibit.curatorNote);
+          card.append(note);
+        }
+
+        const artifactStack = make('div', 'exhibit-artifacts');
+        (exhibit.artifactIds || []).forEach((artifactId) => {
+          const artifact = artifactsById.get(artifactId);
+          if (!artifact) return;
+          const artifactSources = resolveArtifactSources(artifact, sourcesById);
+          const taxonomy = taxonomyById.get(artifact.type);
+          const artifactCard = make('article', 'exhibit-artifact');
+          const topline = make('div', 'exhibit-artifact-topline');
+          if (taxonomy) {
+            const pill = make('div', 'artifact-pill', taxonomy.label);
+            pill.dataset.tone = taxonomy.tone || 'context';
+            topline.append(pill);
+          }
+          if (artifact.supportLabel) topline.append(make('div', 'artifact-pill', artifact.supportLabel));
+          artifactCard.append(topline);
+          artifactCard.append(make('h4', '', artifact.title));
+          artifactCard.append(make('p', '', artifact.caption || artifact.excerpt));
+
+          if (artifactSources.length) {
+            const ledger = make('div', 'exhibit-source-ledger');
+            artifactSources.forEach((source, index) => {
+              const link = make('a', '', `${index === 0 ? 'Primary trail' : 'Supporting trail'} · ${source.label}`);
+              link.href = source.url;
+              link.target = source.url.startsWith('http') ? '_blank' : '_self';
+              if (link.target === '_blank') link.rel = 'noreferrer';
+              ledger.append(link);
+            });
+            artifactCard.append(ledger);
+          }
+
+          const actions = make('div', 'exhibit-actions');
+          if (chapter) {
+            const chapterLink = make('a', 'exhibit-chapter-link', `Jump to ${chapter.phase}`);
+            chapterLink.href = `#${chapter.id}`;
+            actions.append(chapterLink);
+
+            const archiveButton = make('button', 'exhibit-action', 'Open evidence cluster');
+            archiveButton.type = 'button';
+            archiveButton.addEventListener('click', () => openArchiveScope?.(chapter.id));
+            actions.append(archiveButton);
+          }
+          artifactCard.append(actions);
+          artifactStack.append(artifactCard);
+        });
+        card.append(artifactStack);
+
+        if (exhibit.lens?.length) {
+          const lens = make('ul', 'exhibit-lens');
+          exhibit.lens.forEach((item) => {
+            lens.append(make('li', '', item));
+          });
+          card.append(lens);
+        }
+
+        root.append(card);
       });
     }
 
@@ -2928,7 +3105,7 @@
     }
 
     async function init() {
-      const [chapters, locations, validationGroups, sources, timeline, artifacts, artifactTaxonomy, presentDirection, sourceRoadmap] = await Promise.all([
+      const [chapters, locations, validationGroups, sources, timeline, artifacts, artifactTaxonomy, presentDirection, sourceRoadmap, exhibits] = await Promise.all([
         loadJson('./data/chapters.json'),
         loadJson('./data/locations.json'),
         loadJson('./data/validation.json'),
@@ -2937,13 +3114,15 @@
         loadJson('./data/artifacts.json'),
         loadJson('./data/artifact-taxonomy.json'),
         loadJson('./data/present-direction.json'),
-        loadJson('./data/source-roadmap.json')
+        loadJson('./data/source-roadmap.json'),
+        loadJson('./data/exhibits.json')
       ]);
 
       const sourcesById = new Map(sources.map((source) => [source.id, source]));
       const taxonomyById = new Map(artifactTaxonomy.map((entry) => [entry.id, entry]));
       const locationById = new Map(locations.map((location) => [location.id, location]));
       const chaptersById = new Map(chapters.map((chapter) => [chapter.id, chapter]));
+      const artifactsById = new Map(artifacts.map((artifact) => [artifact.id, artifact]));
       const eventsByChapterId = buildEventsByChapterId(timeline.events);
       const artifactsByChapterId = new Map();
       artifacts.forEach((artifact) => {
@@ -2956,6 +3135,7 @@
       renderMapNav(chapters, locationById, eventsByChapterId, sourcesById);
       const setActiveLocation = initializeMap(locations, chapters);
       renderValidation(validationGroups, sourcesById);
+      renderExhibits(exhibits, chaptersById, artifactsById, sourcesById, taxonomyById, archiveApi.openArchiveScope);
       renderPresentDirection(presentDirection, sourcesById);
       renderSourceSummary(sources);
       renderEvidenceAudit(chapters, sourcesById, eventsByChapterId, artifactsByChapterId);

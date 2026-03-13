@@ -1,0 +1,58 @@
+[
+  {
+    "id": "founding-release-trail",
+    "chapterId": "founding-bloombase",
+    "artifactIds": ["openstack-2013-artifact", "vmware-2013-artifact"],
+    "eyebrow": "Exhibit 01 · Founding release trail",
+    "title": "The founder chapter now rests on dated public releases, not a vague origin myth",
+    "summary": "The strongest editorial move in the early company era is to treat February and August 2013 as the first durable public record. These documents make Sean Xiang legible inside a real enterprise-infrastructure narrative before later validation stacks up.",
+    "curatorNote": "This exhibit matters because it converts the founding section from implied biography into documented market-facing language: co-founder and CEO, cloud privacy, virtualization, and data-at-rest trust.",
+    "lens": [
+      "Best use: establish the first public company narrative without pretending to have exact incorporation-day paperwork.",
+      "Why it carries weight: both pieces are direct Bloombase URLs with dated release context and founder-positioning language.",
+      "Design role: document-style cards should feel archival, not promotional."
+    ]
+  },
+  {
+    "id": "validation-arc",
+    "chapterId": "enterprise-validation",
+    "artifactIds": ["dell-2014-artifact", "hitachi-2014-artifact", "ibm-2017-artifact", "azure-2019-artifact"],
+    "eyebrow": "Exhibit 02 · Enterprise validation arc",
+    "title": "The middle years read best as a sequence of trust surfaces",
+    "summary": "Rather than flooding the page with logos, the chronicle can show how compatibility, alliance status, security validation, and marketplace distribution accumulate across several infrastructure waves.",
+    "curatorNote": "This is the chapter that proves durability. Each document marks a different kind of institutional trust: certification, alliance, security validation, and cloud distribution.",
+    "lens": [
+      "Best use: demonstrate progression, not repetition.",
+      "Why it carries weight: the source mix is dense, first-party, and spread across multiple years rather than clustered in one burst.",
+      "Design role: the reader should feel an evidence cadence, not a partner wall."
+    ]
+  },
+  {
+    "id": "geography-proof",
+    "chapterId": "geographic-expansion",
+    "artifactIds": ["geography-footprint-2018"],
+    "eyebrow": "Exhibit 03 · Geography as evidence",
+    "title": "The map becomes credible when expansion logic and operating footprint reinforce each other",
+    "summary": "Vancouver matters because the 2018 Launch Academy profile explains why Canada enters the story, while the Bloombase offices page proves the expansion sits inside a wider operating footprint rather than a symbolic pin.",
+    "curatorNote": "This exhibit protects the geography module from becoming decorative. It answers a real narrative question: how did the journey move across institutions and markets?",
+    "lens": [
+      "Best use: tie place to strategic rationale, not motion for its own sake.",
+      "Why it carries weight: it combines a bridge profile with a direct company geography page.",
+      "Design role: editorial maps should orient the reader, then hand off to evidence."
+    ]
+  },
+  {
+    "id": "ai-era-signal-stack",
+    "chapterId": "ai-era",
+    "artifactIds": ["nvidia-2023", "ai-era-signal-matrix", "utimaco-2025"],
+    "eyebrow": "Exhibit 04 · AI-era signal stack",
+    "title": "The closing section has a credible present-tense sequence: reframing, visibility, then alliance execution",
+    "summary": "The AI-era chapter is strongest when it shows how the story reopens: a 2023 technical reframing around NVIDIA DPUs and GPUs, ongoing public news visibility, and a 2025 alliance that explicitly names the AI era.",
+    "curatorNote": "This is the best candidate for richer media treatment later because the sourcing is already direct enough to support stronger visual evidence without drifting into speculative futurism.",
+    "lens": [
+      "Best use: argue relevance now, not nostalgia.",
+      "Why it carries weight: the chapter already has named, dated, first-party sources with a clear contemporary thesis.",
+      "Design role: future visuals here should behave like exhibits, not hero decoration."
+    ]
+  }
+]
