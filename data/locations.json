@@ -77,10 +77,10 @@
   {
     "id": "vancouver",
     "name": "Vancouver, Canada",
-    "label": "Maple / expansion chapter",
+    "label": "Bloombase Canada / expansion chapter",
     "lat": 49.2827,
     "lon": -123.1207,
-    "summary": "A public expansion story tied to talent, cryptography, and ecosystem positioning, with the location also corroborated by Bloombase's offices page.",
+    "summary": "Bloombase's expansion to Vancouver, targeting advanced cryptography talent and a broader technology ecosystem.",
     "camera": {
       "center": [
         -123.1207,

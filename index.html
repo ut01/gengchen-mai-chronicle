@@ -186,7 +186,7 @@
       backdrop-filter: blur(18px); border: 1px solid rgba(31,39,50,.08); box-shadow: 0 14px 28px rgba(31,39,50,.08);
     }
     .phase-rail ol {
-      display: grid; grid-template-columns: repeat(8, minmax(0,1fr)); gap: 10px; list-style: none; margin: 0; padding: 0;
+      display: grid; grid-template-columns: repeat(9, minmax(0,1fr)); gap: 10px; list-style: none; margin: 0; padding: 0;
     }
     .phase-rail a {
       display: block; text-decoration: none; padding: 12px 10px; border-radius: 16px; min-height: 74px;
@@ -4037,18 +4037,7 @@
       });
       left.append(sourcesRow);
 
-      const right = make('div');
-      right.append(make('div', 'section-label', 'Editorial next moves'));
-      const nextMoves = make('div', 'next-moves');
-      presentDirection.nextMoves.forEach((move, index) => {
-        const card = make('section', 'next-card');
-        card.append(make('strong', '', `Move 0${index + 1}`));
-        card.append(make('p', '', move));
-        nextMoves.append(card);
-      });
-      right.append(nextMoves);
-
-      root.append(left, right);
+      root.append(left);
     }
 
     function renderSourceSummary(sources) {

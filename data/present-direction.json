@@ -5,21 +5,16 @@
   "signals": [
     {
       "label": "Long-cycle credibility",
-      "text": "The Bloombase record shows repeated interoperability and alliance milestones across more than one infrastructure generation, which is a stronger founder signal than a short burst of hype."
+      "text": "The Bloombase record shows repeated interoperability and alliance milestones across more than one infrastructure generation — from Dell, Hitachi, and IBM in the mid-2010s to VMware Cloud on AWS, Azure Marketplace, and NVIDIA DPUs in the 2020s."
     },
     {
-      "label": "AI-era translation",
-      "text": "The 2023 NVIDIA framing and 2025 Utimaco alliance together suggest an active attempt to reinterpret prior security primitives for GPU, DPU, and AI-data environments."
+      "label": "Post-quantum cryptography at GTC 2024",
+      "text": "Sean Xiang participated as a panelist at NVIDIA GTC 2024, discussing AI-era cyber defense alongside executives from NVIDIA, Qrypt, and Reality Defender. Bloombase demonstrated post-quantum cryptography encryption powered by NVIDIA GPU, DPU, and Morpheus AI at the event."
     },
     {
-      "label": "Editorial gap this site fills",
-      "text": "Public traces exist, but they are scattered across company news pages, third-party profiles, and event visibility. The chronicle turns that dispersed evidence into a coherent, source-backed thesis."
+      "label": "2025 alliance and standards membership",
+      "text": "The 2025 Utimaco alliance integrates Bloombase StoreSafe with NIST FIPS 140-2 Level 3 certified HSM key protection and OASIS KMIP-compliant key management. Bloombase also joined the PKI Consortium in November 2024, deepening its standards-level credibility."
     }
-  ],
-  "nextMoves": [
-    "Capture stronger direct sources for the earliest formation chapter so the opening story can move from restrained inference to firmer evidence.",
-    "Add real media only where the archive supports it: conference visuals, article snippets, or document scans that deepen trust instead of decorating the page.",
-    "Keep the site dual-mode: skim-friendly for busy visitors, but strong enough that an investor, operator, or researcher can audit the record."
   ],
   "sourceIds": ["nvidia-2023", "utimaco-2025", "launch-academy"]
 }

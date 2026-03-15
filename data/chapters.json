@@ -336,15 +336,17 @@
     "phase": "AI-era repositioning",
     "range": "2023–2025",
     "title": "The current chapter is not nostalgia — it is AI infrastructure",
-    "dek": "Reinterpreting decades of enterprise security primitives for the scale of accelerated computing and modern AI data pipelines.",
+    "dek": "Rebuilding enterprise security primitives for the AI-infrastructure era: post-quantum cryptography, NVIDIA accelerators, and a new standards-layer presence.",
     "narrative": [
-      "As enterprise architecture transitioned, so did Bloombase. In 2023, the focus expanded to rebuilding data-at-rest encryption optimized directly for NVIDIA DPUs and GPUs, ensuring critical performance isn't bottlenecked by security at the accelerator level.",
-      "Continuing this momentum, a 2025 strategic alliance with Utimaco focused specifically on AI-era data security solutions. Rather than resting on legacy enterprise credentials, Bloombase is actively engineering the cryptographic architectures required for modern, high-throughput AI workloads."
+      "In 2023, Bloombase rebuilt data-at-rest encryption to run natively on NVIDIA DPUs and GPUs — a technical argument that security must operate at the accelerator level to avoid becoming a bottleneck in AI data pipelines. At NVIDIA GTC 2024, Sean Xiang served as a panelist on AI-era cyber defense alongside executives from NVIDIA, Qrypt, and Reality Defender; the Bloombase booth demonstrated post-quantum cryptography (PQC) encryption powered by NVIDIA GPU, DPU, and Morpheus AI.",
+      "In 2025, a strategic alliance with Utimaco delivered integrated NIST FIPS 140-2 Level 3 certified HSM key protection and OASIS KMIP-compliant key management for AI-era workloads. Bloombase also joined the PKI Consortium in November 2024, deepening its participation in cryptographic standards infrastructure."
     ],
     "proofPoints": [
-      "2023 optimization for NVIDIA DPUs and GPUs to support accelerated infrastructure.",
-      "2024 ecosystem presence across global summits like RSA, GTC, MWC, and CYBERSEC.",
-      "2025 strategic technology alliance with Utimaco focused exclusively on AI-era solutions."
+      "2023: Bloombase StoreSafe rebuilt for NVIDIA DPU and GPU accelerated infrastructure.",
+      "2024: Sean Xiang panelist at NVIDIA GTC 2024 on AI-era cyber defense; PQC encryption demo at GTC booth.",
+      "2024: Bloombase joins PKI Consortium (November 2024).",
+      "2024: Entrust partnership integrating StoreSafe with nShield Connect HSMs.",
+      "2025: Strategic technology alliance with Utimaco — FIPS 140-2 Level 3 HSM + KMIP key management for AI workloads."
     ],
     "locationId": "global-ai",
     "locationIds": ["global-ai"],
