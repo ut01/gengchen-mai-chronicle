@@ -406,6 +406,16 @@
 [^56]: Bloombase. "Bloombase Official Solution Page for Hitachi Vantara Interoperability." https://www.bloombase.com/interoperability/hitachi-vantara/
 [^57]: Bloombase. "Thales nShield HSM Interoperability Page." https://www.bloombase.com/interoperability/thales
 [^58]: Bloombase. "Utimaco HSM Interoperability and Solution Details." https://www.bloombase.com/interoperability/utimaco
+[^59]: Bloombase. "Bloombase StoreSafe Delivers Transparent Data Security for Oracle ZFS Storage Appliance." March 10, 2015. https://www.bloombase.com/news/2015-03-10-bloombase-storesafe-delivers-transparent-data-security-for-oracle-zfs-storage-appliance
+[^60]: Bloombase. "Bloombase StoreSafe Now Available in the Microsoft Azure Marketplace." January 22, 2019. https://www.bloombase.com/news/2019-01-22-bloombase-storesafe-now-available-in-the-microsoft-azure-marketplace
+[^61]: Bloombase. "Bloombase StoreSafe Storage Firewall on Google Cloud Now Available on the Google Cloud Marketplace." May 14, 2024. https://www.bloombase.com/news/2024-05-14-bloombase-storesafe-storage-firewall-on-google-cloud-now-available-on-the-google-cloud-marketplace
+[^62]: Bloombase. "Futurex and Bloombase Offer Highest Level of Security for Data-at-Rest." February 18, 2020. https://www.bloombase.com/news/2020-02-18-futurex-and-bloombase-offer-highest-level-of-security-for-data-at-rest
+[^63]: Bloombase. "Bloombase Joins OpenStack Community." February 18, 2013. https://www.bloombase.com/news/2013-02-18-bloombase-joins-openstack-community
+[^64]: Bloombase. "Bloombase Joins EMC Technology Partner Program." May 8, 2013. https://www.bloombase.com/news/2013-05-08-bloombase-joins-emc-technology-partner-program
+[^65]: Bloombase. "Bloombase StoreSafe Achieves VCE Vblock Ready Certification." August 5, 2014. https://www.bloombase.com/news/2014-08-05-bloombase-storesafe-achieves-vce-vblock-ready-certification
+[^66]: Hitachi Vantara. "Hitachi Interoperability Guide for HCP Ecosystem." https://www.hitachivantara.com/en-us/pdf/best-practices/hitachi-interoperability-guide-hcp-hcp-anywhere-hdi.pdf
+[^67]: Bloombase. "Bloombase Joins NVIDIA Inception Program." March 21, 2023. https://www.bloombase.com/news/2023-03-21-bloombase-joins-nvidia-inception-program
+[^68]: NIST. "Security Policy for Bloombase Cryptographic Module (FIPS 140-2 #1241) PDF." https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1241.pdf
 
 ---
 
