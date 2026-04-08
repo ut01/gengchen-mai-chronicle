@@ -416,6 +416,9 @@
 - **Company verification:** Crunchbase confirms 2012 founding by Sean Xiang
 - **Technical certifications:** Multiple sources confirm FIPS 140-2, IEEE P1619, OASIS KMIP participation
 
+### Chinese Name Correction Note
+The correct Chinese name for Sean Xiang is **相韶华** (Pinyin: Xiāng Sháohuá). An earlier research draft incorrectly — this has been corrected across all documents. Searches were conducted using both the incorrect and correct Chinese names; neither yielded Chinese academic records. English transliteration "Xiang Shaohua" is unchanged.
+
 ### Recommended Additional Sources
 For a complete Wikipedia article, editors should seek:
 1. **Academic records verification:**
