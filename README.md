@@ -1,13 +1,22 @@
-# Animated Chronicle Template
+# Gengchen Mai Academic Chronicle
 
-An animated founder/professional chronicle project featuring:
+An animated academic chronicle project featuring:
 - Research dossier
 - Milestone timeline
 - Geographic journey map
-- Landing page / tribute page
+- Academic profile page
 - TimelineJS + StoryMapJS integration
 
-Originally created for Sean Xiang / Bloombase by Koutian Wu <https://github.com/ktwu01/>
+Template originally created for Sean Xiang / Bloombase by Koutian Wu <https://github.com/ktwu01/>
+Adapted for Gengchen Mai / UT Austin GeoAI research
+
+---
+
+## About This Chronicle
+
+This chronicle documents the academic and research journey of **Gengchen Mai**, Assistant Professor at the University of Texas at Austin, Department of Geography and the Environment, and director of the Spatially Explicit Artificial Intelligence (SEAI) Lab.
+
+The chronicle traces Mai's path from undergraduate GIS education at Wuhan University through graduate training at UC Santa Barbara, postdoctoral research at Stanford AI Lab, faculty positions at University of Georgia and UT Austin, and ongoing collaboration with Google Research.
 
 ---
 

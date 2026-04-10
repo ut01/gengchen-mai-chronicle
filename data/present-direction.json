@@ -1,20 +1,51 @@
 {
   "eyebrow": "Present direction",
   "title": "Why this chronicle matters now",
-  "summary": "The point of the page is not to memorialize an old enterprise-security run. It is to argue that Sean Xiang's long build becomes newly legible in the AI-infrastructure era, where data-at-rest protection, cryptographic trust, and accelerator-era architecture have to meet again.",
+  "summary": "Gengchen Mai's research trajectory demonstrates how geographic information science evolved into GeoAI. His work on spatially explicit AI, geo-foundation models, and geographic bias addresses critical challenges at the intersection of AI and spatial data science.",
   "signals": [
     {
-      "label": "Long-cycle credibility",
-      "text": "The Bloombase record shows repeated interoperability and alliance milestones across more than one infrastructure generation — from Dell, Hitachi, and IBM in the mid-2010s to VMware Cloud on AWS, Azure Marketplace, and NVIDIA DPUs in the 2020s."
+      "label": "SEAI Lab at UT Austin",
+      "text": "Founded and directs the Spatially Explicit Artificial Intelligence Lab, focusing on GeoAI, geo-foundation models, and geographic knowledge graphs."
     },
     {
-      "label": "Post-quantum cryptography at GTC 2024",
-      "text": "Sean Xiang participated as a panelist at NVIDIA GTC 2024, discussing AI-era cyber defense alongside executives from NVIDIA, Qrypt, and Reality Defender. Bloombase demonstrated post-quantum cryptography encryption powered by NVIDIA GPU, DPU, and Morpheus AI at the event."
+      "label": "NSF Grant for Geographic Bias Research",
+      "text": "Awarded $300,000 NSF grant in 2025 to develop frameworks for measuring and mitigating geographic bias in AI models and foundation models."
     },
     {
-      "label": "2025 alliance and standards membership",
-      "text": "The 2025 Utimaco alliance integrates Bloombase StoreSafe with NIST FIPS 140-2 Level 3 certified HSM key protection and OASIS KMIP-compliant key management. Bloombase also joined the PKI Consortium in November 2024, deepening its standards-level credibility."
+      "label": "Google Research Collaboration",
+      "text": "Serves as Visiting Faculty Researcher at Google Research, bridging academic research with industry applications in GeoAI."
+    },
+    {
+      "label": "Recognition in GeoAI Community",
+      "text": "Received AAG Nystrom Award (2023) and William L. Garrison Award (2022) for contributions to geographic representation learning and GeoAI."
     }
   ],
-  "sourceIds": ["nvidia-2023", "utimaco-2025", "launch-academy"]
+  "nextMoves": [
+    {
+      "label": "Trustworthy GeoAI",
+      "text": "Developing statistics-informed frameworks to quantify and mitigate geographic bias in AI models, addressing an often-overlooked challenge in ethical AI development."
+    },
+    {
+      "label": "Geo-Foundation Models",
+      "text": "Advancing research on foundation models for geospatial data, enabling more generalizable and robust AI systems for spatial analysis."
+    },
+    {
+      "label": "Geographic Knowledge Graphs",
+      "text": "Building structured knowledge representations that capture spatial relationships and geographic context for AI applications."
+    }
+  ],
+  "sources": [
+    {
+      "label": "UT Austin Profile",
+      "url": "https://liberalarts.utexas.edu/geography/faculty/gm34392"
+    },
+    {
+      "label": "SEAI Lab",
+      "url": "https://sites.utexas.edu/seai/"
+    },
+    {
+      "label": "NSF Grant Announcement",
+      "url": "https://sites.utexas.edu/seai/2025/09/09/dr-gengchen-mai-wins-300000-national-science-foundation-research-grant/"
+    }
+  ]
 }

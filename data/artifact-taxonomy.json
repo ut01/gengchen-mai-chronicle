@@ -1,50 +1,32 @@
 [
   {
-    "id": "profile-source",
-    "label": "Profile source",
-    "description": "Third-party profile or expansion story that connects multiple chapters of the biography.",
-    "tone": "context"
+    "id": "profile",
+    "label": "Academic Profile",
+    "description": "Personal websites, CV pages, and biographical profiles"
   },
   {
-    "id": "alliance-announcement",
-    "label": "Alliance announcement",
-    "description": "Direct company announcement marking interoperability, partnership, or ecosystem validation.",
-    "tone": "validation"
+    "id": "institutional",
+    "label": "Institutional Record",
+    "description": "University faculty pages, departmental profiles, official records"
   },
   {
-    "id": "platform-proof",
-    "label": "Platform proof",
-    "description": "A launch, listing, or integration that shows distribution or infrastructure relevance.",
-    "tone": "evidence"
+    "id": "research-group",
+    "label": "Research Group",
+    "description": "Lab websites, research group pages, team documentation"
   },
   {
-    "id": "ai-positioning",
-    "label": "AI positioning",
-    "description": "A source that reframes Bloombase for accelerated computing, data pipelines, or AI-era security.",
-    "tone": "present"
+    "id": "funding",
+    "label": "Grant & Funding",
+    "description": "Grant announcements, funding awards, research support"
   },
   {
-    "id": "primary-announcement",
-    "label": "Primary announcement",
-    "description": "A dated first-party release suitable for stronger editorial treatment because it is direct and specific.",
-    "tone": "primary"
+    "id": "recognition",
+    "label": "Awards & Recognition",
+    "description": "Professional awards, honors, recognition announcements"
   },
   {
-    "id": "founding-proof",
-    "label": "Founding proof",
-    "description": "An early first-party release that makes the opening public company narrative more concrete than a generic founding claim.",
-    "tone": "primary"
-  },
-  {
-    "id": "geography-proof",
-    "label": "Geography proof",
-    "description": "A source-backed artifact that turns location and office footprint into narrative evidence instead of decorative mapping.",
-    "tone": "primary"
-  },
-  {
-    "id": "ecosystem-visibility",
-    "label": "Ecosystem visibility",
-    "description": "A grouped artifact for conference, platform, and alliance signals that keep the present-tense chapter grounded in dated sources.",
-    "tone": "present"
+    "id": "education",
+    "label": "Educational Record",
+    "description": "Degree documentation, graduate profiles, thesis records"
   }
 ]
